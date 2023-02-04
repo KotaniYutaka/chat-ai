@@ -12,7 +12,7 @@
   <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
   <h3>Chat with AI</h3>
   <form action="/" method="post">
-    <input type="text" name="animal" placeholder="Enter a conversation" required />
+    <input type="text" name="animal" placeholder="Enter your message" required />
     <input type="submit" value="send a message" />
   </form>
   {% if result %}
