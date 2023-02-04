@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Quickstart</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='dog.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
+  <h3>Chat with AI</h3>
+  <form action="/" method="post">
+    <input type="text" name="animal" placeholder="Enter a conversation" required />
+    <input type="submit" value="reply" />
+  </form>
+  {% if result %}
+  <style>
+    .result {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      max-width: 600px;
+      max-height: none;
+      overflow: visible;
+      font-size: 1.5em;
+      line-height: 1.5;
+    }
+  </style>
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>
