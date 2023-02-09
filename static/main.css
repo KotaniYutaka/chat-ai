@@ -1,5 +1,3 @@
-@media screen and (max-width: 480px)　{ 
-
 
 @font-face {
   font-family: "ColfaxAI";
@@ -67,4 +65,4 @@ input[type="submit"] {
   font-weight: bold;
   margin-top: 40px;
 }
-}
+
