@@ -5,8 +5,8 @@ from datetime import timedelta
 from flask import Flask, redirect, render_template, request, url_for, session, jsonify
 
 app = Flask(__name__)
-openai.api_key = "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"
-app.secret_key = 'user'
+openai.api_key = "------"
+app.secret_key = '---'
 app.permanent_session_lifetime = timedelta(minutes=10) 
 
 
